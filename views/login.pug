@@ -1,0 +1,59 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title Login page
+    link(rel='stylesheet', href='../static/elearn.css')
+    script(src='../app.js')
+  body
+    section#login
+      #loginimg.form
+        h4 "Education is a Journey of Discovery and Growth, Where Minds Blossom and Futures Flourish."
+      // Form Part
+      #nextside
+        .head
+          div
+            button
+              a(href='/help') &larr;
+            a(href='/help') Go to Help page
+          div
+            p Not a member yet?
+          div
+            button
+              a(href='/') Register 
+        #formpart
+          h1 Login To E-clear Academy
+          span Enter your detail below
+          form.form(action='/login', method='POST')
+            div
+              p Email
+              input.details(type='text' name='email' value=email)
+              if errors && errors.email
+                span.error-message= errors.email
+            div
+              p Password
+              input.details(type='password' name='loginpassword')
+              if errors && errors.loginpassword
+                span.error-message= errors.loginpassword
+              span
+                a(href='') Forgot password
+            .submit
+              input(type='submit' value='Login')
+            .option
+              div
+                h5 Login with your social account
+              .sm
+                div
+                  a(href='')
+                    img(alt='log-in-with-facebook' src='../static/contentimg/login2.png')
+                div
+                  a(href='')
+                    img(alt='log-in-with-google' src='../static/contentimg/login3.png')
+                div
+                  a(href='')
+                    img(alt='log-in-with-apple' src='../static/contentimg/login1.png')
+
+// Display the login error message (if any)
+if loginError
+  p.error-message= loginError

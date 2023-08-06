@@ -1,0 +1,102 @@
+doctype html
+html
+  head
+    title Best E-learning platform
+    block scripts
+    block style
+  body
+    nav#navbar
+        #logo.navs
+            img(src='../static/photos/WhatsApp Image 2023-07-08 at 3.43.11 PM.jpeg' alt='not displayed' height='60rem' width='60rem')
+        #page.navs
+            ul
+                li.item
+                    a(href='/elearn',class=currentPage === 'home' ? 'active' : '') Home
+                li.item
+                    a(href='/about',class=currentPage === 'about' ? 'active' : '') About us
+                li.item
+                    a(href='/students' ,class=currentPage === 'students' ? 'active' : '') Students
+                li.item
+                    a(href='/teachers' ,class=currentPage === 'teachers' ? 'active' : '') Teachers
+                li.item
+                    a(href='/course' ,class=currentPage === 'help' ? 'active' : '') Courses
+        #btn.navs
+          form(action="/logout", method="get")
+            button.item(type="submit" onclick="return confirm('Are you sure you want to logout?')") Logout
+            
+                
+                
+                
+    block content
+     // cover section
+  section#cover
+    #logo
+      img(src='../static/photos/pic13.png' alt='not displayed' height='100rem' width='100rem')
+    .covers
+      #same.cover1
+        ul
+          h5 CONTACT US
+          li
+            img(src='../static/footerimg/flogo1.png' alt='noimagefound' height='30px' width='30px')
+            a(href='tel:+977-9846944688') 9846944688
+          li
+            img(src='../static/footerimg/flogo2.png' alt='noimagefound' height='30px' width='30px')
+            a(href='mailto:info@eclearacedemy.com') info@eclearacedemy.com
+          li
+            img(src='../static/footerimg/flogo3.jpg' alt='noimagefound' height='30px' width='30px')
+            | City Hall, Walling, Syangja
+          img(src='../static/footerimg/location.png' alt='imagenotfound' height='60%' width='80%')
+          p We accept
+          img(src='../static/footerimg/pay1.jpg' alt='noimagefound' height='40px' width='100px')
+          img(src='../static/footerimg/pay2.png' alt='noimagefound' height='40px' width='100px')
+          img(src='../static/footerimg/pay3.png' alt='noimagefound' height='40px' width='100px')
+      #same.cover2
+        ul
+          h5 ABOUT
+          li
+            a(target='' href='') Courses
+          li
+            a(target='' href='') Blogs
+          li
+            a(target='' href='') Join us
+          li
+            a(target='' href='') Career
+          li
+            a(target='' href='') Media
+      #same.cover3
+        ul
+          h5 CONTENT
+          li
+            a(target='' href='') 3D animation
+          li
+            a(target='' href='') Videos
+          li
+            a(target='' href='') Digital Content
+          li
+            a(target='' href='') Quiz
+          li
+            a(target='' href='') Tests
+      #same.cover4
+        ul
+          h5 FEATURES
+          li
+            a(target='' href='') Exam preparation
+          li
+            a(target='' href='') Ask doubts
+          li
+            a(target='' href='') Study plan
+          li
+            a(target='' href='') Notebooks
+          li
+            a(target='' href='') Past Papers
+      #same.cover5
+        span Download Learner App
+        .d-flex
+          a.getit(href='')
+            img(src='../static/footerimg/download2.png' alt='Get it on google play' height='50px' width='150px')
+          a.getit(href='')
+            img(src='../static/footerimg/download3.png' alt='Download on App Store' height='50px' width='150px')
+    footer.foot
+     h6 copyright &copy;eclearacedemy | All right reserved !
+
+     

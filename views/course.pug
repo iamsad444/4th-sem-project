@@ -1,0 +1,62 @@
+extends base.pug
+
+block scripts 
+   script(src='../app.js')
+
+block style
+  style 
+    include ../static/elearn.css
+
+block content
+  div.rgis
+    h1 Registered Students
+    p Total Students: #{students.length}
+    p
+      label(for="program-filter") Filter by Program:
+      select#program-filter(name="program")
+        option(value="all") All
+        each program in uniquePrograms
+          option(value=program)= program
+    // Form for Student Enrollment
+   
+    form#enroll-form(action="/enroll", method="post")
+      div
+        label(for="student-name") Student Name:
+        br
+        input#student-name(type="text", name="studentName", required)
+      div
+        label(for="student-program") Program:
+        br
+        input#student-program(type="text", name="studentProgram", required)
+      div
+        label(for="student-subjects") Subjects (comma-separated):
+        br
+        input#student-subjects(type="text", name="studentSubjects", required)
+      div
+        label(for="student-time") Time:
+        br
+        input#student-time(type="text", name="studentTime", required)
+      div
+        button(type="submit") Enroll
+    // List of Registered Students
+    table
+      thead
+        tr
+          th Name
+          th Program
+          th Subjects
+          th Time
+          th Enrollment Status
+          th Actions
+      tbody
+        each student in studentsFiltered
+          tr
+            td= student.name
+            td= student.program
+            td= student.subjects.join(', ')
+            td= student.time
+            td= student.enrollmentStatus
+            td
+              a(href=`/edit/${student._id}`) Edit
+              br
+              a(href=`/delete/${student._id}`) Delete

@@ -1,0 +1,54 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title registerpage
+    link(rel='stylesheet', href='../static/elearn.css')
+    script(src='../app.js')
+  body
+    section#login
+      #loginimg.form
+        h4
+          | "Education is a Journey of Discovery and Growth, Where Minds Blossom and Futures Flourish."
+      // Form Part
+      #nextside
+        .head
+          div
+            button
+              a(href='/help') &larr;
+            a(href='/help') Go to Help page
+          div
+            p Already have an Account?
+          div
+            button
+              a(href='/login') login 
+        #formpart
+          h1 Register To E-clear Academy
+          span Enter your detail below
+          form.form(action='/register', method='POST')
+            div
+              p Full Name
+              input.details(type='text', name='fullname', value=fullname)
+            div
+              p Phone No:
+              input.details(type='Phone', name='phoneno', value=phoneno)
+              if errors && errors.phoneno
+                span.error-message #{errors.phoneno}
+            div
+              p Email
+              input.details(type='email', name='email', value=email)
+              if errors && errors.email
+                span.error-message #{errors.email}
+            div
+              p Password
+              input.details(type='password', name='password')
+              if errors && errors.password
+                span.error-message #{errors.password}
+            div
+              p Confirm Password
+              input.details(type='password', name='password1')
+              if errors && errors.password1
+                span.error-message #{errors.password1}
+            .submit
+              input(type='submit', value='Continue')

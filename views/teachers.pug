@@ -1,0 +1,62 @@
+extends base.pug
+
+block scripts 
+   script(src='../app.js')
+
+block style
+  style 
+    include ../static/elearn.css
+
+block content
+  .master
+    h1 E-Clear Academy: Where teachers inspire, minds aspire.
+  // Video Section
+  .tvideo
+    .tecvideo
+      h1 Inspiring Lifelong Learning with E-Clear Academy&apos;s Exceptional Teachers!
+    .tecvideo
+      video(controls='')
+        source(src='../static/studentpageimg/WhatsApp Video 2023-06-25 at 11.46.25 AM.mp4' type='video/mp4')
+    .tecvideo
+      p
+        | At E-Clear Academy, our dedicated teachers are the heart and soul of our mission to provide transformative education. With unwavering passion and expertise, they contribute their knowledge, skills, and invaluable insights to shape the minds of tomorrow&apos;s leaders.Through their tireless efforts, our teachers foster an environment that inspires curiosity, fuels creativity, and encourages critical thinking.
+      p
+        | E-clear allows teachers to schedule, create and conduct live video-based classes for students, create, distribute, receive, grade, and return marked assignments with feedback to students, create mock exam papers based on topics, question types, and difficulty levels, access learning resources like eTextbooks, eWorkbooks, eTeachersGuides, and interactive videos, create virtual channels for specific student groups, and make announcements to students. Essentially, the E-clear platform provides all the core features required for teachers to manage both face-to-face as well as online teaching all in one platform
+    .tecvideo
+      h4
+        | Based on student feedback surveys, our teachers consistently receive high satisfaction ratings, with an average score of 9 out of 10
+  // TEACHERS ACTIVITIES SECTION
+  section.tas
+    h5 Education with a Twist: Where Fun and Learning Collide!
+    span Learning, E-Learning, and Fun-tertaining!
+    .tassnm
+      .tassip
+        img(src='../static/photos/pic14.png' alt='Noimagefound' height='60%' width='60%')
+        h6 Teaching Resource
+        p
+          | Teachers can access various teaching resources like  Interactive Videos, eTextbooks, eWorkbooks, eTeachersGuides, PHET simulations, etc and use these during classes. Teacher may also give out assignments to students directly from the platform!
+      .tassip
+        img(src='../static/photos/pic9.jpeg' alt='Noimagefound' height='60%' width='60%')
+        h6 Group Chat
+        p
+          | Our Group Chat helps connect teachers with their students, and is supportive of their differentiated learning or project work groupings. Within the groups, teachers and students may share documents, images, links, etc. Some teachers also use Group Chat to conduct small-scale live text-based classes and interactive sessions.
+      .tassip
+        img(src='../static/photos/pic12.jpg' alt='Noimagefound' height='60%' width='60%')
+        h6 Classroom
+        p
+          | Teachers can easily create and conduct their online live video-based and text-based classes using the mySecondTeacher Classroom itself or even through external softwares such as Zoom, Google Meet, etc by sharing the link. The classes can be recorded so that students can re-watch them later. Teachers can also create, distribute, receive and grade assignments in a few clicks.
+      .tassip
+        img(src='../static/studentpageimg/student7.jpg' alt='Noimagefound' height='60%' width='60%')
+        h6 Test papers
+        p
+          | Teachers can generate self-marking or normal testpapers along with their marking schemes based on topics, chapters or the entire syllabus with different difficulty levels in a matter of clicks. There is even a secret question bank only accessible to teachers! The questions generated best resemble the ones asked in real exams.
+      .tassip
+        img(src='../static/photos/pic5.jpeg' alt='Noimagefound' height='60%' width='60%')
+        h6 Reports and Statistics
+        p
+          | Teachers can identify the learning gaps of their student using our Diagnostic Reports and eBook Read logs. This aids teachers in intervention planning and ultimately helps students learn better.
+  section.regis
+    h1 Join Our Class Today!
+    button
+      a(href='course') Register Now
+    

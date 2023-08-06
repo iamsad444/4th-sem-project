@@ -1,0 +1,27 @@
+doctype html
+html
+  head
+    title Edit Student Enrollment
+  body
+    h1 Edit Student Enrollment
+    form#edit-form(action=`/edit/${student._id}`, method="post")
+      div
+        label(for="student-name") Student Name:
+        br
+        input#student-name(type="text", name="studentName", value=student.name, required)
+      div
+        label(for="student-program") Program:
+        br
+        input#student-program(type="text", name="studentProgram", value=student.program, required)
+      div
+        label(for="student-subjects") Subjects (comma-separated):
+        br
+        input#student-subjects(type="text", name="studentSubjects", value=student.subjects.join(', '), required)
+      div
+        label(for="student-time") Time:
+        br
+        input#student-time(type="text", name="studentTime", value=student.time, required)
+      div
+        button(type="submit") Save Changes
+        br
+        a(href="/course") &larr; Back to Course Page

@@ -1,0 +1,60 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title registerpage
+    link(rel='stylesheet', href='../static/elearn.css')
+    script(src='../app.js')
+  body
+    section#help
+      #helpreq.form1
+        .head
+          div
+            button
+              a(href='/') &rarr;
+            a(href='/') Go to Register page
+        
+        .contform
+        h1 Help &amp; Support
+        p
+          | If you need any assistance or have any questions, please feel free to reach out to us. Our support team is here to help you.
+        h2 Frequently Asked Questions
+        // Add your frequently asked questions here
+        h2 Messages for Registration Form Fields
+        // Messages for Full Name
+        h3 Full Name
+        p
+          | To register successfully, please provide your full name. It should contain only alphabets and spaces.
+        // Messages for Email
+        h3 Email
+        p
+          | Please enter a valid email address. This will be used for account-related communication.
+        // Messages for Phone Number
+        h3 Phone Number
+        p
+          | Enter your 10-digit phone number without any spaces or special characters. This will be used for account verification and communication.
+        // Messages for Password
+        h3 Password
+        p
+          | Your password should have at least 8 characters, including one uppercase letter, one lowercase letter, one digit, and one special character.
+        // Messages for Confirm Password
+        h3 Confirm Password
+        p
+          | Please re-enter your password to confirm it. Make sure it matches the password you provided above.
+      #helppart
+        h2 Contact Us
+        p
+          | If you need further assistance, please don&apos;t hesitate to get in touch with us. We&apos;re always here to help you.
+        form.forme(action='/help' method='POST')
+          div
+            p Your Name
+            input.details(type='text' name='Name')
+          div
+            p Your Email
+            input.details(type='email' name='Email')
+          div
+            p Message
+            textarea.details(name='Message' rows='4')
+          .submit
+            input(type='submit' value='Send Message')

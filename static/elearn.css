@@ -1,0 +1,902 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+a{
+  text-decoration: none;
+}
+#navbar{
+    position: fixed;
+    width: 100%;
+display: grid;
+grid-template-columns: 1fr 4fr 2fr;
+align-items: center;
+color: white;
+background-color:darkblue;
+border-radius: 1rem;
+}
+.navs{
+
+justify-items:center ;
+align-items: center;
+}
+#navbar #logo{
+  padding-left: 20%;
+  width: auto;
+}
+#logo img{
+    border-radius: 1rem;
+    margin: 1%;
+
+}
+
+#navbar ul{
+  display: flex;
+}
+#navbar ul li{
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    
+}
+#navbar ul li a{
+    padding: 0.4rem;
+    border-radius: 9px;
+    margin: 0.4rem;
+    font-size:1rem;
+    text-decoration: none;
+    color: white;
+}
+#navbar span{
+font-size: 10px;
+color: white;
+
+}
+#navbar button{
+padding: 0.4rem;
+margin: 0.8rem;
+color: whitesmoke;
+border: 3px solid lightgrey;
+border-radius: 9px;
+background-color: darkblue;
+font-size:1rem;
+}
+#navbar button:hover{
+  background-color: aqua;
+    color: black;
+   cursor: pointer;
+}
+#btn{
+    display: flex;
+
+}
+#navbar li a:hover{
+background-color: aqua;
+color: black;
+cursor: pointer;
+}
+#navbar #btn .item a{
+  color: white;
+}
+
+/*Home section*/
+#home{
+    height: 45rem;
+}
+#home #line{
+  font-size:1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 2rem;
+  color:darkgoldenrod;
+padding-top: 8rem;
+
+}
+#line2{
+text-align: right;
+}
+#slogan{
+display: grid;
+grid-template-columns: 1fr 1fr;
+
+}
+#home1{
+  display: flex;
+  align-items: center;
+height: 16rem;
+}
+#home2{
+  display: flex;
+align-items: center;
+height: 16rem;
+justify-content: end;
+}
+
+#slogan img{
+    border-radius: 9px;
+    animation-name: anim;
+    animation-duration: 2s;
+    animation-fill-mode: alternate;
+    animation-iteration-count: 1;
+    }
+    @keyframes anim {
+        from{
+            height: 10px;
+            width: 10px;
+        }
+       to{
+   height: 60%;
+   width: 35%;
+     
+       }
+    }
+#home::before{
+    content:"";
+    position: absolute;
+    background: url('../static/photos/background10.jpg')no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;
+
+    
+}
+
+
+/*INFO section*/
+#info{
+    display: grid;
+    grid-template-columns: 1fr 2fr;
+    margin-top: 2rem;
+   
+}
+#info .info1{
+    text-align: center;
+ padding: 4px;
+ height: 100%;
+}
+#info .info1 h1{
+    font-size:3rem ;
+    color: green;
+  padding: 1rem;
+}
+#info .info1 h3{
+    font-size: 2rem;
+}
+#info .info1 p{
+    font-size: 1.4rem;
+}
+.info1 button{
+    padding: 0.5rem;
+    border: 3px solid darkorange;
+border-radius: 9px;
+margin: 8px;
+font-size: 110%;
+cursor: pointer;
+}
+.info1 button:hover{
+color: whitesmoke;
+border: 3px solid lightgrey;
+border-radius: 9px;
+background-color: rgb(0, 255, 64);
+font-size: 110%;
+}
+
+#info .info2{
+    display: grid;
+    grid-template-rows:1fr 1fr 1fr 1fr ;
+padding-left: 3rem;
+}
+
+.infos{
+    display: flex;
+    
+}
+.infos1{
+    padding: 10px;
+    padding-left: 50px;
+    padding-top: 10px;
+}
+.infos1 h3{
+    margin: 10px;
+    margin-left: 0;
+}
+.info2 img{
+border-radius: 10px;
+}
+/* DETAIL SECTION */
+#detail{
+  margin-top: 6rem;
+  padding-top: 4rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+}
+#detail h1{
+  padding-bottom: 4rem;
+    font-size: 300%;
+    color: brown;
+}
+.desec{
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+
+ }
+.detl{
+ display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+
+}
+.detl img{
+animation-name: sugam;
+animation-duration: 2s;
+animation-fill-mode: alternate;
+animation-iteration-count: 1;
+}
+@keyframes sugam {
+    from{
+        height: 10px;
+        width: 10px;
+    }
+   to{
+    height: 100px;
+    width: 100px;
+   }
+}
+.count-number{
+font-size: 200%;
+padding: 10px;
+margin-top: 10px;
+font-weight: bold;
+color: brown;
+}
+.count-title{
+    font-size: 110%;
+    text-align: center;
+    font-weight: bolder;
+}
+#detail::before{
+    content:"";
+    position: absolute;
+    background: url('../static/photos/detbackground2.jpg')no-repeat center center/cover;
+    height: 80%;
+    width: 100%;
+    z-index: -1;
+    opacity: 0.4;
+}
+/* Course section */
+
+#course{
+  margin-top: 8rem;
+  display: grid;
+  grid-template-rows: 1fr 4fr;
+    justify-content: center;
+    align-items: center;
+}
+#course::before{
+    content:"";
+    position: absolute;
+    background: url('../static/photos/detbackground.jpg')no-repeat center center/cover;
+    height: 100%;
+    width: 100%;
+    z-index: -1;  
+    opacity: 0.9;
+   
+}
+#course h1{
+    text-align: center;
+    margin: 20px;
+    font-size: 300%;
+    color: brown;
+}
+#course img{
+    height: 300px;
+    width: 250px;
+    margin: 30px;
+
+    
+}
+.slider {
+    width: 100%;
+    height: 400px;
+    overflow: hidden;
+  }
+  
+  .slides {
+    display: flex;
+    width: 300%;
+    animation: slide-animation 10s infinite;
+  }
+  
+  .slides img {
+    width: 100%;
+    height: auto;
+  }
+  
+  @keyframes slide-animation {
+    0% { margin-left: 0; }
+    20% { margin-left: -100%; }
+    40% { margin-left: -200%; }
+    60% { margin-left: -200%; }
+    80% { margin-left: -100%; }
+    100% { margin-left: 0; }
+  }
+
+  /* CONTENT SECTION */
+  #content{
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 2rem;
+    background-color: lightblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  backface-visibility: 0.;
+  }
+  #content img{
+height: 80%;
+width: 60%;
+border-radius: 9px;
+animation-name: cntimg;
+animation-duration: 2s;
+animation-fill-mode: alternate;
+animation-iteration-count: 1;
+
+  }
+
+  @keyframes cntimg {
+    0% {
+      transform: scale(0, .025);
+    }
+    50% {
+      transform: scale(1, .025);
+    }
+  }
+.contents h1,.contents p{
+  padding-left: 2rem;
+}
+  #content #content2,#content5,#content6,#content9,#content10{
+display: flex;
+justify-content: center;
+align-items: center;
+  }
+  
+  .contents{
+    height:20rem;
+display: flex;
+flex-direction: column;
+justify-content: center;
+font-size: 1.4rem;
+  }
+  .contents p{
+margin-top: 1rem;
+font-size: 1.2rem;
+  }
+  #content1{
+    height: 8rem;
+   text-align:center;
+    font-size: 2rem;
+    margin: 3rem;
+    color: brown;
+      }
+  .contents:first-child{
+    grid-column: 1 / span 2;
+  }
+
+
+
+  /* Footer section*/
+  #cover{
+    margin-top: 4rem;
+    padding-top: 4rem;
+    background-color: skyblue;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+  }
+  #cover #logo{
+    padding-top: 20px;
+  }
+  .covers{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    margin-top: 20px;
+    grid-template-areas: 
+    'cover1 cover2 cover3 cover4'
+    'cover1 cover5 cover5 cover5';
+
+  }
+  .cover1{
+grid-area: cover1;
+padding: 10px;
+  }
+  .cover2{
+    grid-area: cover2;
+  }
+  .cover3{
+    grid-area: cover3;
+  }
+  .cover4{
+    grid-area: cover4;
+  }
+  .cover5{
+    grid-area: cover5;
+    font-size: 200%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.cover5 img{
+    margin: 20px;
+}
+.cover1 img{
+    border-radius: 8px;
+    padding: 2px;
+}
+
+  #cover ul li{
+    list-style: none;
+    margin: 10px;
+    padding: 10px;
+  }
+  #cover ul li a{
+    text-decoration: none;
+    color: darkblue;
+  }
+  .covers h5{
+    font-weight: bolder;
+    margin-left: 20px;
+    font-size: 110%;
+  }
+
+  .cover1 ul li {
+ display: grid;
+ grid-template-columns: 1.5fr 6fr;
+align-items: center;
+  }
+.cover1 p{
+    text-align: center;
+    margin-top: 40px;
+    font-size: 110%;
+}
+
+.foot{
+  padding: 1.4rem;
+    font-size:1.8rem;
+    background-color: darkblue;
+    color: white;
+    text-align: center;
+}
+
+
+/* CSS for about page */
+#abts{
+  height: 20rem;
+display: flex;
+justify-content:center;
+align-items: center;
+font-size: 1.8rem;
+color: rgb(136, 32, 13);
+text-align: center;
+}
+#abts::before{
+  content: "";
+  position: absolute;
+  background: url('../static/photos/detbackground2.jpg')no-repeat center center/cover;
+  height: 70%;
+  width: 100%;
+  z-index: -1;
+  opacity: 1;
+}
+#artic{
+  margin-top: 10rem;
+  display: grid;
+  grid-template-columns: 3fr 2fr;
+}
+#artic h3{
+text-align: center;
+font-size: 2rem;
+color: brown;
+}
+#artic p{
+  margin: 2rem;
+  font-size: 1.2rem;
+}
+#artimg{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* FOUNDER SECTION */
+#leaders{
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
+}
+#leaders h3{
+  text-align: center;
+  font-size: 3rem;
+  padding-bottom: 3rem;
+  color: brown;
+}
+#founder{
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  grid-gap: 2rem;
+  justify-content: start;
+  align-items: start;
+}
+  .descrip{
+    font-size: 1.2rem;
+
+  }
+  .descrip h1, .descrip h4,.descrip p{
+    padding-bottom: 0.5rem;
+    padding-left: 2rem;
+  }
+  .descrip h4{
+    color:goldenrod;
+  }
+  .descrip p{
+    padding-bottom: 0.5rem;
+  }
+  .leader{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+/* STUDENT PAGE */
+#sslogs{
+  height: 45rem;
+}
+#ref h2{
+padding-top: 7rem;
+  text-align: center;
+  color: darkblue;
+  font-size: 3rem;
+  font-style: italic;
+}
+#sslogs::before{
+  content: "";
+  position: absolute;
+  background: url('../static/studentpageimg/student9.jpg')no-repeat center center/cover;
+ height: 100%;
+  width: 100%;
+  z-index: -1;
+  opacity: 1;
+}
+/* Ad VIDEO SECTION  */
+#advideo{
+display: grid;
+grid-template-rows: 1fr 8fr 1fr 1fr;
+justify-items: center;
+align-items: center;
+text-align: center;
+grid-gap: 1rem;
+margin-top: 4rem;
+
+}
+#advideo h1{
+  font-size: 3rem;
+  color: brown;
+}
+#advideo p{
+  font-size: 1.4rem;
+}
+#advideo h3{
+  font-size: 1.6rem;
+  color: darkblue;
+}
+
+/* Testimonial section  */
+.testimonial{
+  margin: 1rem;
+}
+.testimonial h1{
+  text-align: center;
+  padding: 2rem;
+  font-size: 3rem;
+  margin-top: 3rem;
+  color: brown;
+}
+ .testikon{
+  width: 100%;
+  overflow: hidden;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-gap: 5rem;
+}
+
+.testim {
+  display: grid;
+  grid-template-columns:1fr 1fr;
+  grid-gap: 1rem;
+  border: 2px solid wheat;
+  border-radius: 20px;
+}
+.para{
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+ justify-content: center;
+ align-items: center;
+
+}
+.paras{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+}
+.paras h6{
+  font-size: 1.5rem;
+}
+
+
+
+.para:first-child{
+  grid-column: 1 /span 2;
+  height: 10rem;
+}
+
+.testim img {
+  width: 100%;
+  height: auto;
+}
+
+
+.testim img{
+  height: 70px;
+  width: 70px;
+  border-radius: 40px;
+}
+
+/* FOR LOGIN PAGE */
+#login{
+  display: grid;
+  grid-template-columns: 2fr 3fr;
+  height: 45rem;
+}
+  
+#loginimg{
+background-image: url('../static/studentpageimg/student2.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+#loginimg h4{
+padding-top: 37rem;
+font-size: 1.4rem;
+color: mediumvioletred;
+}
+.head{
+  display: grid;
+  grid-template-columns: 3fr 1fr 1fr;
+align-items: center;
+  margin-top: 0;
+  background-color: lightgoldenrodyellow;
+  padding: 1rem;
+}
+.head button{
+  padding: 0.2rem;
+  border-radius: 9px;
+  margin-right: 0.3rem;
+}
+#formpart{
+  display: grid;
+  grid-gap: 1rem;
+  justify-content: center;
+  align-content: center;
+  height: 43rem;
+  background-image: url('../static/photos/detbackground2.jpg');
+background-repeat: no-repeat;
+background-size: cover;
+background-position: center;
+}
+#formpart h1{
+  font-size: 2.5rem;
+}
+#formpart p{
+  font-size: 1.4rem;
+}
+.form{
+  display: grid;
+  grid-gap: 1rem;
+padding: 3rem;
+}
+.details{
+  width: 100%;
+  padding: 0.3rem;
+  border-radius: 9px;
+}
+.submit{
+  display: flex;
+  justify-content: center;
+}
+.submit input{
+  font-size: 1.2rem;
+  padding: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  border-radius: 16px;
+  background-color: darkblue;
+  color: white;
+}
+.submit input:hover{
+  cursor: pointer;
+  background-color: brown;
+  color: whitesmoke;
+}
+#formpart h5{
+  font-size: 1.4rem;
+}
+.option{
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+}
+.sm{
+  display: flex;
+}
+.sm img{
+  margin: 1rem;
+}
+
+/* Teachers PAGE */
+.master{
+  height: 20rem;
+  display: flex;
+justify-content: center;
+align-items: center;
+text-align: center;
+font-size: 1.4rem;
+color: darkblue;
+}
+.master::before{
+  content: "";
+  position: absolute;
+  background: url('../static/contentimg/contentback1.jpg')no-repeat center center/cover;
+  height: 70%;
+  width: 100%;
+  z-index:-1;
+}
+.tvideo{
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 2rem;
+}
+.tvideo h1{
+  font-size: 2.5rem;
+  color: brown;
+}
+.tvideo p{
+  font-size: 1.3rem;
+}
+.tvideo h4{
+  font-size: 1.5rem;
+  color: darkblue;
+}
+.tecvideo{
+margin-top:2rem ;
+}
+/* tas */
+.tas{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+}
+.tas h5{
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  color: brown;
+}
+.tas span{
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+  color: blue;
+}
+.tassnm{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 2rem;
+
+}
+.tassip{
+  border: 2px solid lightseagreen;
+  display: flex;
+  flex-direction: column;
+  height: 25rem;
+  width: 20rem;
+  margin: 1rem;
+  padding: 1rem;
+  border-radius: 9px;
+}
+.tassip h6{
+  font-size: 1.6rem;
+margin-top: 1rem;
+}
+/* regis */
+.regis{
+  margin-top: 4rem;
+  font-size: 3rem;
+  color: Brown;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.regis button{
+  font-size: 2rem;
+  margin-top: 3rem;
+  padding: 1rem;
+  background-color: greenyellow;
+  border-radius: 20px;
+}
+
+/* Help page  */
+#help{
+  background-color: skyblue;
+  padding: 2rem;
+  padding-top: 4rem;
+  
+
+}
+#helpreq{
+  display: grid;
+  grid-gap: 1rem;
+}
+#helppart
+{
+  display: grid;
+  
+  grid-gap: 1rem;
+  padding: 1rem;
+  padding-top: 3rem;
+  justify-content: center;
+  text-align: center;
+}
+#helppart .details{
+max-width: 50%;
+
+}
+
+/* Page indicatior css  */
+#page li.item a.active {
+  font-weight: bold;
+  color: #007bff; /* You can change this to any color you prefer */
+}
+
+/* Course CSS  */
+form #enroll-form{
+  display: flex;
+  flex-direction: column;
+
+}
+#enroll-form a{
+text-decoration: none;
+}
+/* Edit CSS  */
+form #edit-form{
+  display: flex;
+  flex-direction: column;
+}
+.rgis{
+  padding: 5rem;
+}

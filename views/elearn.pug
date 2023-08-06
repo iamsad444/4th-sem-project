@@ -1,0 +1,139 @@
+extends base.pug
+
+block scripts 
+   script(src='../app.js')
+
+block style
+  style 
+    include ../static/elearn.css
+
+block content
+  section#home
+    #line
+      h1#line1.lines Your Goal!!!
+      h1#line2.lines Our Misson!!!
+    #slogan
+      #home1.homes
+        img(src='../static/photos/homeimg2.gif' alt='Noimagefound' height='60%' width='35%')
+      #home2.homes
+        img(src='../static/photos/homeimg1.gif' alt='Noimagefound' height='60%' width='35%')
+    span#time
+  // infosection
+  section#info
+    .info1
+      h1 FEATURES
+      h3 How E-clear can be beneficial for Students?
+      p
+        | Knowledge increases as you share it, hence if you share your knowledge here you will be doing a noble work of teaching as well as being able to work towards your passion. By this you are giving back to society what you are skilled at and at the same time making an extra income. Well networking and getting connected with the Members are yet another aspect the Teachers would be benefited with.
+      button
+        h4 Learn more
+    .info2
+      .infos
+        img(src='../static/photos/pic5.jpeg' alt='no image found' height='100px' width='100px')
+        .infos1
+          h3 Better classroom organization.
+          p  Recorded videos with a video speed controller. Reports and analytics.
+      .infos
+        img(src='../static/photos/pic9.jpeg' alt='no image found' height='100px' width='100px')
+        .infos1
+          h3  Access Anytime from Anywhere
+          p
+            | Teachers can save time, increase efficiency, and improve student outcomes by using our app
+      .infos
+        img(src='../static/photos/pic10.jpeg' alt='no image found' height='100px' width='100px')
+        .infos1
+          h3 Go Live with Unlimited Time
+          p
+            | Conduct live training, communicate with participants virtually with the real-time live feature, and keeps the recording automatically.
+      .infos
+        img(src='../static/photos/pic8.jpeg' alt='no image found' height='100px' width='100px')
+        .infos1
+          h3 Data Storage
+          p
+            | Training resources require a great deal of data. Keeping it all securely in one place will make administration easier to manage.
+  // detail SECTION
+  section#detail
+    h1 Our Details
+    .desec
+      .detl
+        img(src='../static/photos/logo5.png' alt='Noimagefound' height='100px' width='100px')
+        span.count-number
+          span.count 50
+          | +
+        span.count-title Courses
+      .detl
+        img(src='../static/photos/logo2.jpg' alt='Noimagefound' height='100px' width='100px')
+        span.count-number
+          span.count 2500
+          | +
+        span.count-title Videos
+      .detl
+        img(src='../static/photos/logo3.png' alt='Noimagefound' height='100px' width='100px')
+        span.count-number
+          span.count 50
+          | +
+        span.count-title Plans
+      .detl
+        img(src='../static/photos/logo4.png' alt='Noimagefound' height='100px' width='100px')
+        span.count-number
+          span.count 30000
+          | +
+        span.count-title Active Learners
+  // COURSE SECTION
+  section#course
+    h1 Our Popular Courses
+    .slider
+      .slides
+        img.slide(src='../static/books/book1.jpg' alt='Image 1')
+        img.slide(src='../static/books/book2.jpg' alt='Image 2')
+        img.slide(src='../static/books/book3.jpg' alt='Image 3')
+        img.slide(src='../static/books/book4.jpg' alt='Image 4')
+        img.slide(src='../static/books/book5.jpg' alt='Image 5')
+        img.slide(src='../static/books/book6.jpg' alt='Image 6')
+        img.slide(src='../static/books/book7.jpg' alt='Image 7')
+        img.slide(src='../static/books/book8.jpg' alt='Image 8')
+        img.slide(src='../static/books/book9.jpg' alt='Image 9')
+        img.slide(src='../static/books/book10.jpg' alt='Image 10')
+        img.slide(src='../static/books/book11.jpg' alt='Image 11')
+        img.slide(src='../static/books/book12.jpg' alt='Image 12')
+        img.slide(src='../static/books/book13.jpg' alt='Image 13')
+        img.slide(src='../static/books/book14.jpg' alt='Image 14')
+        img.slide(src='../static/books/book15.jpg' alt='Image 15')
+  // CONTENT SECTION
+  section#content
+    #content1.contents
+      h1 Connect to the World of Learning with E-clear
+    #content2.contents
+      img(src='../static/contentimg/content1.png' alt='Noimagefound' height='60%' width='60%')
+    #content3.contents
+      h1 Online Assignment
+      p Online Assignment are given after finishing of a topic.
+    #content4.contents
+      h1 Regular Exam
+      p Exam is taken time to time as per the requrirement of student betterment.
+    #content5.contents
+      img(src='../static/contentimg/content2.jpg' alt='Noimagefound')
+    #content6.contents
+      img(src='../static/contentimg/content3.png' alt='Noimagefound')
+    #content7.contents
+      h1 Conceptualised Video
+      p
+        | Animated 2D/3Di-Videos that helps to visualize each
+        | concept, making it clear and easier to understand.
+    #content8.contents
+      h1 Gamified content
+      p
+        | Game-based content and STEAM education
+        | encourages knowledge application,fosters creativity
+        | and teaches problem solving skills by using your
+        | critical thinking skills.
+    #content9.contents
+      img(src='../static/contentimg/content4.png' alt='Noimagefound')
+    #content10.contents
+      img(src='../static/contentimg/content5.jpg' alt='Noimagefound')
+    #content11.contents
+      h1 Electronic Certificate
+      p Managing electronic certificates on course completion.
+ 
+
+
